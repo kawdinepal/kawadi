@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/newsfeed_fragment_custom_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address  "
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                     />
+
+                <TextView
+                    android:id="@+id/newsfeed_fragment_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lukhusi Machagal, Ring Road 44600, Patan 44700, Nepal"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="30sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Source     "
+                    android:textColor="@color/yellow"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/newsfeed_fragment_sourceType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="School"
+                    android:textColor="#14f9c3"
+                    android:textSize="28sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newsfeed_fragment_amount_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsfeed_fragment_custom_info"
+            android:layout_marginTop="2dp"
+            >
+
+            <TextView
+                android:id="@+id/newsfeed_fragment_custom_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rs.600"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/newsfeed_fragment_custom_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1200m"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/newsfeed_fragment_custom_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12kg"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsfeed_fragment_amount_distance">
+
+            <ImageView
+                android:id="@+id/locationicon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/locationicon" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
